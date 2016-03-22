@@ -6,7 +6,7 @@ pwm.enable(true);
 pwm.period_us(2000);
 
 var SerialPort = require("serialport").SerialPort;
-var serialPort = new SerialPort('/dev/ttyACM0', { //デバイス側のedisonでは/dev/ttyttyGS0
+var serialPort = new SerialPort('/dev/ttyGS0', {
   baudrate: 115200
 }, false);
 
